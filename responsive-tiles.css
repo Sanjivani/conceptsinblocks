@@ -8,6 +8,10 @@ section.cms-boxes .cms-boxes-outer .cms-boxes-items {
     display: table;
     width: 100%;
 }
+section.cms-boxes .cms-salesforce {
+    background-color: #349eeb;
+    background-size: cover;
+}
 section.cms-boxes .cms-features {
     background-color: #b70457;
     background-size: cover;
