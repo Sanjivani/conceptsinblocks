@@ -1,62 +1,79 @@
 <link rel="stylesheet" href="css/gallery-style.css">
 <script type="text/javascript" src="script/galleryJS.js"></script>
 <script type="text/javascript" src="script/includeHTML.js"></script>
-<div w3-include-html="includes/header.html"></div>
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div w3-include-html="includes/header.html"></div>
 
 
-
-<div style="text-align:center">
-  <h2>Salesforce- Data Architecture Concepts</h2>
-  <p>Click on the concept to view:</p>
-</div>
- 
-<!-- The grid: four columns -->
-<div class="row" style="height:200px">
-  <div class="column">
-    <div class="imgcontainer">
-    <img src="images/concepts/SalesforceDataManagement-Data Governess.png" alt="SalesforceDataManagement-Data Governess" onclick="myFunction(this);">
-    
-    <div class="text-block">
-    <h4>Data Governess</h4>
-    <p> </p>
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Salesforce- Data Architecture Concepts</h2>
+      <p>Click on the concept to view:</p>
     </div>
-  </div>
-  </div>
-  <div class="column">
-    <div class="imgcontainer">
-    <img src="images/concepts/SalesforceDataManagement-Data Stewardship.png" alt="Data Stewardship" onclick="myFunction(this);">
-    
-    <div class="text-block">
-    <h4>Data Stewardship</h4>
-    <p> </p>
+
+
+
+    <!-- The grid: four columns -->
+    <div class="row" style="height:200px">
+      <div class="column">
+        <div class="imgcontainer">
+          <img src="images/concepts/SalesforceDataManagement-Data Governess.png" alt="SalesforceDataManagement-Data Governess" onclick="myFunction(this);">
+
+          <div class="text-block">
+            <h4>Data Governess</h4>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="imgcontainer">
+          <img src="images/concepts/SalesforceDataManagement-Data Stewardship.png" alt="Data Stewardship" onclick="myFunction(this);">
+
+          <div class="text-block">
+            <h4>Data Stewardship</h4>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="imgcontainer">
+          <img src="images/concepts/SalesforceDataManagement-Data Types.png" alt="-Data Types" onclick="myFunction(this);">
+
+          <div class="text-block">
+            <h4>Data Types</h4>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+
+    <br>
+    <br>
+
+  <!-- The expanding image container -->
+  <div class="main-img-container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+
+    <!-- Image text -->
+    <div id="imgtext"></div>
   </div>
-</div>
-  <div class="column">
-    <div class="imgcontainer">
-    <img src="images/concepts/SalesforceDataManagement-Data Types.png" alt="-Data Types" onclick="myFunction(this);">
-    
-    <div class="text-block">
-    <h4>Data Types</h4>
-    <p> </p>
+  <br>
+  <br>
+  
+  <div w3-include-html="includes/footer.html"></div>
+
+  <script>
+    includeHTML();
+  </script>
   </div>
-    </div>
-  </div>
-</div>
-
-<!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
-
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>
-<div w3-include-html="includes/footer.html"></div>
-
-<script>
-includeHTML();
-</script>
+</body>
+</html>
