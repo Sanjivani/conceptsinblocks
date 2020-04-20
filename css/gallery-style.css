@@ -3,12 +3,14 @@
   float: left;
   width: 25%;
   padding: 10px;
+  height: 100%;
 }
 
 /* Style the images inside the grid */
 .column img {
   opacity: 0.8;
   cursor: pointer;
+  width: 100%;
 }
 
 .column img:hover {
